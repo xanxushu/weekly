@@ -24,8 +24,8 @@ jobs:
           git remote add upstream https://github.com/ruanyf/weekly.git
           git fetch upstream
           git checkout master
-          git merge upstream/master
-          
+          git merge upstream/master --allow-unrelated-histories
+
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
