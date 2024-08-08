@@ -1,6 +1,9 @@
-name: Sync with Upstream
+name: Sync and Deploy MkDocs
 
 on:
+  push:
+    branches:
+      - master
   schedule:
     - cron: '0 4 * * 5' # 每周五 UTC 时间凌晨 4 点
   workflow_dispatch:
@@ -53,10 +56,9 @@ jobs:
           python-version: '3.x'
 
       - name: Install dependencies
-        run: pip install mkdocs mkdocs-material
+        run: pip install mkdocs mkdocs-material pyyaml
 
       - name: Build and Deploy
         run: |
           mkdocs build
           mkdocs gh-deploy --force
-

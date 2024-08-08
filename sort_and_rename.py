@@ -1,5 +1,6 @@
 import os
 import re
+import yaml
 
 docs_dir = "docs"
 mkdocs_yml = "mkdocs.yml"
@@ -17,16 +18,14 @@ for filename in files:
     issue_num = re.search(r'\d+', filename).group()
     new_filename = f"第{issue_num}期.md"
     os.rename(os.path.join(docs_dir, filename), os.path.join(docs_dir, new_filename))
-    nav_entries.append(f"  - '第{issue_num}期': {new_filename}")
+    nav_entries.append({'title': f"第{issue_num}期", 'path': new_filename})
 
 # 更新 mkdocs.yml
 with open(mkdocs_yml, "r") as file:
-    lines = file.readlines()
+    config = yaml.safe_load(file)
 
-nav_start = lines.index("nav:\n") + 1
-nav_end = len(lines)
-
-new_lines = lines[:nav_start] + nav_entries + lines[nav_end:]
+# 更新导航栏条目
+config['nav'] = [{'首页': 'index.md'}] + nav_entries
 
 with open(mkdocs_yml, "w") as file:
-    file.writelines(new_lines)
+    yaml.dump(config, file, allow_unicode=True, default_flow_style=False)
