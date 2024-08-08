@@ -26,8 +26,37 @@ jobs:
           git checkout master
           git merge upstream/master --allow-unrelated-histories
 
+      - name: Update README.md to docs/index.md
+        run: |
+          cp README.md docs/index.md
+
+      - name: Sort and rename files
+        run: |
+          python sort_and_rename.py
+
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: master
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: sync
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install mkdocs mkdocs-material
+
+      - name: Build and Deploy
+        run: |
+          mkdocs build
+          mkdocs gh-deploy --force
+
