@@ -34,7 +34,7 @@ with open(mkdocs_yml, "r") as file:
     config = yaml.safe_load(file)
 
 # 更新导航栏条目
-config['nav'] = [{'Home': 'index.md'}] + nav_entries
+config['nav'] = [{'首页': 'index.md'}] + nav_entries
 
 with open(mkdocs_yml, "w") as file:
     yaml.dump(config, file, allow_unicode=True, default_flow_style=False)
