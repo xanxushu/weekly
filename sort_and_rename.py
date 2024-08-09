@@ -7,7 +7,7 @@ mkdocs_yml = "mkdocs.yml"
 
 # 获取 docs 目录中的文件列表
 files = [
-    f for f in os.listdir(docs_dir) 
+    f for f in os.listdir(docs_dir)
     if f.startswith("issue-") and f.endswith(".md")
 ]
 
@@ -24,10 +24,10 @@ nav_entries = []
 for original_filename, issue_num in files_with_numbers:
     new_filename = f"issue-{issue_num:03}.md"
     os.rename(
-        os.path.join(docs_dir, original_filename), 
+        os.path.join(docs_dir, original_filename),
         os.path.join(docs_dir, new_filename)
     )
-    nav_entries.append({'title': f"第{issue_num}期", 'path': new_filename})
+    nav_entries.append({'第{}期'.format(issue_num): new_filename})
 
 # 更新 mkdocs.yml
 with open(mkdocs_yml, "r") as file:
