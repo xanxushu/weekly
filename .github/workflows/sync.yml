@@ -26,8 +26,11 @@ jobs:
         run: |
           git remote add upstream https://github.com/ruanyf/weekly.git
           git fetch upstream
+
+      - name: Merge upstream/master
+        run: |
           git checkout master
-          git merge upstream/master --allow-unrelated-histories
+          git merge upstream/master --strategy-option theirs # 在冲突时总是采用上游的修改
 
       - name: Update README.md to docs/index.md
         run: |
@@ -51,7 +54,10 @@ jobs:
       - name: Display mkdocs.yml
         run: cat mkdocs.yml
 
-      - name: Build and Deploy
+      - name: Build MkDocs
+        run: mkdocs build
+
+      - name: Deploy MkDocs to GitHub Pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
