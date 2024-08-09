@@ -52,6 +52,7 @@ jobs:
         run: cat mkdocs.yml
 
       - name: Build and Deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          mkdocs build
-          mkdocs gh-deploy --force
+          mkdocs gh-deploy --force --remote-name origin
