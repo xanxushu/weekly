@@ -32,10 +32,6 @@ jobs:
           git checkout master
           git merge upstream/master --allow-unrelated-histories --strategy-option theirs # 在冲突时总是采用上游的修改
 
-      - name: Update README.md to docs/index.md
-        run: |
-          cp README.md docs/index.md
-
       - name: Sort and rename files
         run: |
           python sort_and_rename.py
@@ -47,6 +43,14 @@ jobs:
 
       - name: Install dependencies
         run: pip install mkdocs mkdocs-material pyyaml
+
+      - name: Update links in README.md
+        run: |
+          python update_links.py
+
+      - name: Update README.md to docs/index.md
+        run: |
+          cp README.md docs/index.md
 
       - name: Check renamed files
         run: ls docs
