@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  sync:
+  sync_and_deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -37,25 +37,6 @@ jobs:
         run: |
           python sort_and_rename.py
 
-      - name: Check renamed files
-        run: ls docs
-
-      - name: Display mkdocs.yml
-        run: cat mkdocs.yml
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: master
-
-  deploy:
-    runs-on: ubuntu-latest
-    needs: sync
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -63,6 +44,12 @@ jobs:
 
       - name: Install dependencies
         run: pip install mkdocs mkdocs-material pyyaml
+
+      - name: Check renamed files
+        run: ls docs
+
+      - name: Display mkdocs.yml
+        run: cat mkdocs.yml
 
       - name: Build and Deploy
         run: |
