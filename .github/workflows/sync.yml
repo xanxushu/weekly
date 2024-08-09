@@ -37,6 +37,12 @@ jobs:
         run: |
           python sort_and_rename.py
 
+      - name: Check renamed files
+        run: ls docs
+
+      - name: Display mkdocs.yml
+        run: cat mkdocs.yml
+
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
