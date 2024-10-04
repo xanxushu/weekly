@@ -1,0 +1,7165 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../issue-275/">
+      
+      
+        <link rel="next" href="../issue-273/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+    
+    
+      
+        <title>第274期 - Ruanyf Weekly</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#274" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="Ruanyf Weekly" class="md-header__button md-logo" aria-label="Ruanyf Weekly" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Ruanyf Weekly
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第274期
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="浅色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="浅色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="black"  aria-label="深色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="深色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ruanyf/weekly" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ruanyf/weekly
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Ruanyf Weekly" class="md-nav__button md-logo" aria-label="Ruanyf Weekly" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Ruanyf Weekly
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ruanyf/weekly" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ruanyf/weekly
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    首页
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-319/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第319期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-318/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第318期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-317/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第317期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-316/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第316期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-315/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第315期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-314/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第314期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-313/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第313期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-312/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第312期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-311/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第311期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-310/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第310期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-309/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第309期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-308/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第308期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-307/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第307期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-306/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第306期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-305/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第305期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-304/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第304期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-303/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第303期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-302/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第302期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-301/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第301期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-300/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第300期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-299/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第299期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-298/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第298期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-297/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第297期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-296/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第296期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-295/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第295期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-294/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第294期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-293/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第293期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-292/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第292期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-291/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第291期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-290/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第290期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-289/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第289期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-288/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第288期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-287/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第287期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-286/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第286期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-285/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第285期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-284/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第284期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-283/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第283期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-282/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第282期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-281/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第281期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-280/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第280期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-279/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第279期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-278/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第278期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-277/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第277期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-276/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第276期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-275/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第275期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    第274期
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    第274期
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      封面图
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      加密通信的最后一块拼图
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      [活动] 稀土掘金创新论坛
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      科技动态
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      文章
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      工具
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      资源
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      图片
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      文摘
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      言论
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      往年回顾
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-273/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第273期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-272/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第272期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-271/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第271期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-270/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第270期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-269/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第269期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-268/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第268期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-267/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第267期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-266/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第266期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-265/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第265期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-264/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第264期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-263/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第263期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-262/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第262期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-261/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第261期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-260/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第260期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-259/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第259期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-258/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第258期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-257/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第257期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-256/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第256期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-255/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第255期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-254/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第254期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-253/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第253期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-252/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第252期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-251/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第251期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-250/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第250期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-249/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第249期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-248/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第248期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-247/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第247期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-246/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第246期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-245/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第245期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-244/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第244期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-243/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第243期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-242/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第242期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-241/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第241期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-240/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第240期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-239/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第239期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-238/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第238期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-237/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第237期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-236/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第236期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-235/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第235期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-234/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第234期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-233/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第233期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-232/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第232期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-231/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第231期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-230/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第230期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-229/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第229期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-228/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第228期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-227/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第227期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-226/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第226期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-225/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第225期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-224/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第224期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-223/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第223期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-222/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第222期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-221/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第221期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-220/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第220期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-219/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第219期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-218/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第218期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-217/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第217期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-216/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第216期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-215/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第215期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-214/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第214期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-213/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第213期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-212/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第212期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-211/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第211期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-210/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第210期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-209/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第209期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-208/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第208期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-207/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第207期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-206/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第206期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-205/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第205期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-204/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第204期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-203/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第203期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-202/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第202期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-201/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第201期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-200/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第200期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-199/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第199期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-198/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第198期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-197/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第197期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-196/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第196期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-195/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第195期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-194/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第194期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-193/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第193期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-192/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第192期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-191/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第191期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-190/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第190期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-189/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第189期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-188/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第188期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-187/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第187期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-186/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第186期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-185/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第185期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-184/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第184期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-183/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第183期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-182/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第182期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-181/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第181期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-180/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第180期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-179/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第179期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-178/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第178期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-177/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第177期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-176/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第176期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-175/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第175期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-174/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第174期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-173/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第173期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-172/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第172期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-171/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第171期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-170/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第170期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-169/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第169期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-168/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第168期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-167/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第167期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-166/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第166期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-165/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第165期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-164/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第164期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-163/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第163期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-162/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第162期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-161/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第161期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-160/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第160期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-159/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第159期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-158/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第158期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-157/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第157期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-156/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第156期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-155/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第155期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-154/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第154期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-153/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第153期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-152/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第152期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-151/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第151期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-150/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第150期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-149/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第149期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-148/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第148期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-147/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第147期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-146/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第146期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-145/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第145期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-144/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第144期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-143/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第143期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-142/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第142期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-141/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第141期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-140/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第140期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-139/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第139期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-138/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第138期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-137/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第137期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-136/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第136期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-135/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第135期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-134/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第134期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-133/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第133期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-132/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第132期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-131/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第131期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-130/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第130期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-129/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第129期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-128/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第128期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-127/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第127期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-126/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第126期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-125/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第125期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-124/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第124期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-123/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第123期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-122/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第122期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-121/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第121期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-120/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第120期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-119/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第119期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-118/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第118期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-117/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第117期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-116/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第116期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-115/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第115期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-114/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第114期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-113/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第113期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-112/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第112期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-111/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第111期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-110/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第110期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-109/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第109期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-108/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第108期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-107/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第107期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-106/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第106期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-105/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第105期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-104/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第104期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-103/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第103期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-102/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第102期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-101/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第101期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-100/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第100期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-099/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第99期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-098/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第98期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-097/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第97期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-096/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第96期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-095/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第95期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-094/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第94期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-093/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第93期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-092/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第92期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-091/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第91期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-090/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第90期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-089/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第89期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-088/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第88期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-087/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第87期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-086/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第86期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-085/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第85期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-084/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第84期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-083/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第83期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-082/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第82期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-081/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第81期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-080/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第80期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-079/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第79期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-078/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第78期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-077/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第77期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-076/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第76期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-075/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第75期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-074/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第74期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-073/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第73期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-072/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第72期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-071/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第71期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-070/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第70期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-069/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第69期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-068/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第68期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-067/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第67期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-066/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第66期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-065/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第65期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-064/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第64期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-063/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第63期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-062/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第62期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-061/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第61期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-060/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第60期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-059/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第59期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-058/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第58期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-057/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第57期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-056/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第56期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-055/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第55期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-054/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第54期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-053/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第53期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-052/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第52期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-051/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第51期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-050/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第50期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-049/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第49期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-048/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第48期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-047/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第47期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-046/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第46期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-045/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第45期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-044/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第44期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-043/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第43期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-042/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第42期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-041/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第41期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-040/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第40期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-039/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第39期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-038/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第38期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-037/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第37期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-036/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第36期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-035/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第35期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-034/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第34期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-033/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第33期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-032/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第32期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-031/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第31期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-030/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第30期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-029/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第29期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-028/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第28期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-027/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第27期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-026/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第26期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-025/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第25期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第24期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-023/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第23期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-022/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第22期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-021/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第21期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-020/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第20期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-019/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第19期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-018/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第18期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-017/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第17期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-016/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第16期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-015/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第15期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-014/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第14期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-013/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第13期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-012/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第12期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-011/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第11期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-010/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第10期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-009/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第9期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-008/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第8期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-007/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第7期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-006/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第6期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-005/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第5期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-004/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第4期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-003/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第3期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-002/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第2期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issue-001/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第1期
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      封面图
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      加密通信的最后一块拼图
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      [活动] 稀土掘金创新论坛
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      科技动态
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      文章
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      工具
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      资源
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      图片
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      文摘
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      言论
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      往年回顾
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="274">科技爱好者周刊（第 274 期）：加密通信的最后一块拼图</h1>
+<p>这里记录每周值得分享的科技内容，周五发布。</p>
+<p>本杂志<a href="https://github.com/ruanyf/weekly">开源</a>，欢迎<a href="https://github.com/ruanyf/weekly/issues">投稿</a>。另有<a href="https://github.com/ruanyf/weekly/issues/3529">《谁在招人》</a>服务，发布程序员招聘信息。合作请<a href="mailto:yifeng.ruan@gmail.com">邮件联系</a>（yifeng.ruan@gmail.com）。</p>
+<h2 id="_1">封面图</h2>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202310/bg2023101507.webp" /></p>
+<p>上图是最近落成的成都科幻馆，位于成都市郫都区菁蓉湖畔，可用于举办展览、会议等各种活动。10月18日，第81届世界科幻大会和雨果奖在这里开幕。（<a href="https://www.ithome.com/0/724/950.htm">via</a>）</p>
+<h2 id="_2">加密通信的最后一块拼图</h2>
+<p>十一期间，世界最大的 CDN 服务商 Cloudflare 发了<a href="https://blog.cloudflare.com/announcing-encrypted-client-hello/">一篇博客文章</a>，宣称解决了“加密通信的最后一块拼图”。</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202310/bg2023101508.webp" /></p>
+<p>这件事挺重要的，可能会影响很多人，本周我想好好谈谈。</p>
+<p>我先问大家，HTTPS 链接是加密通信吗？</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202310/bg2023101601.webp" /></p>
+<p>你可以说它是，因为通信内容确实是加密的，外界无法窥测和篡改。</p>
+<p>但是，它又不是彻底的加密通信，<strong>有一个地方是不加密的，那就是域名</strong>。中间人可以看到，你访问什么网站。</p>
+<p>为什么域名不加密呢？</p>
+<p>因为加密的密钥放在服务器上，而服务器只有知道域名，才知道发送哪一把密钥。所以，密钥的发送，必须在知道域名之后。</p>
+<p>Cloudflare 解决的就是这个问题，它发明了一种新技术，叫做 ECH。</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202310/bg2023101704.webp" /></p>
+<p>ECH 非常巧妙地解决了域名加密。它采用双层格式，也就是说，域名分了两层。外层是明文的，统一发送到 cloudflare-ech.com，内层是加密的，存放真正的域名。</p>
+<p><strong>中间人只能看到你在访问 cloudflare-ech.com，看不到内层的域名</strong>，从而达到保密的效果。</p>
+<p>好了，技术介绍就说到这里，下面就是我的感想。我当时一看到 ECH 的细节，不禁就产生了疑问。</p>
+<p>如果 cloudflare-ech.com 发生故障，或者种种原因无法访问，那么所有 Cloudflare 托管的网站是否都无法访问？</p>
+<p>这是很现实的问题，因为 Cloudflare 是世界最大 CDN 服务商，很多网站都放在上面。而且，它对免费用户都启用了 ECH，还无法关闭（这是付费功能），等于是让免费用户当小白鼠。</p>
+<p>我今天写这个话题，就是想提醒大家。<strong>如果由于 ECH 的问题，托管在 Cloudflare 的网站无法访问，有两个解决办法</strong>。</p>
+<p>一个是站长向 Cloudflare 付费，关了 ECH；另一个是访问者不要使用加密 DNS，因为 ECH 依赖加密 DNS，没有了它，就不会触发 ECH。</p>
+<h2 id="_3">[活动] 稀土掘金创新论坛</h2>
+<p>下周六（10月28日），北京有一个高层次的“稀土掘金创新论坛”活动。</p>
+<p>它的主题是“<strong>AI 时代下的管理变革</strong>”，邀请了13位中国互联网行业知名的专家、学者和企业高管，进行现场畅谈。 </p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202310/bg2023101813.webp" /></p>
+<p>活动采用“主论坛 + 闭门会”的形式，演讲者逐一分享各自企业的 AI 创新和行业趋势，探讨这一轮生成式 AI 大潮带来的挑战和机遇。</p>
+<p>活动地点是北京新云南皇冠假日酒店。<strong>希望了解嘉宾见解和业内 AI 动态，进行面对面交流的朋友，不要错过了。</strong></p>
+<p>主论坛价值3999元的门票，限时开放<strong>免费申请</strong>。欢迎点击<a href="https://www.bagevent.com/event/8047254?bag_track=ruanyifeng">这个链接</a>，或者扫描上方二维码，现在就可以预约主会场入场券，先到先得。</p>
+<h2 id="_4">科技动态</h2>
+<p>1、<a href="https://people.com/adobe-debuts-interactive-dress-8358152">变幻图案的裙子</a></p>
+<p>上周的 Adobe MAX 2023 大会上，Adobe 展示了一条会变换图案的裙子。</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202310/bg2023101607.webp" /></p>
+<p>项目负责人 Christine Dierk 亲自穿着这条裙子登上舞台。它由许多小鳞片组成，可以不停地改变图案。</p>
+<p>它有一个开关来控制，也可以用手机无线控制。它可以显示 Adob​​e Firefly、Adobe After Effects、Adob​​e Illustrator 等软件生成的图案。</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202310/bg2023101608.webp" /></p>
+<p>可以想象，这种衣服对女装行业，未来可能有巨大冲击，因为每天都可以下载不同颜色和图案。不过，Adobe 计划首先将其用于手提包。</p>
+<p>2、<a href="https://www.nytimes.com/2022/06/02/science/giraffe-neck-evolution.html">长颈鹿的脖子</a></p>
+<p>长颈鹿的脖子为什么那么长？</p>
+<p>进化论的解释是，为了吃到更高的树叶。但是，一项新的研究认为，这可能是为了获得打架优势。</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202308/bg2023082101.webp" /></p>
+<p>在中国的准噶尔盆地，发现了一块长颈鹿祖先的化石。它的脖子并没有很长，但是头部有一块扁平的骨骼，就像头盔一样。</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202308/bg2023082102.webp" /></p>
+<p>科学家认为，这可能表明，它们同类之间的争斗采用撞头的形式。为了获得争斗优势，它们的脖子就变得越来越长了。</p>
+<p>3、<a href="https://www.atlassian.com/blog/announcements/atlassian-acquires-loom">录屏软件值多少钱？</a></p>
+<p>澳大利亚软件巨头 Atlassian 上周宣布，以10亿美元收购录屏软件 Loom。谁能想到，一个录屏软件可以值这么多。</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202310/bg2023101304.webp" /></p>
+<p>Loom 成立于2015年，只是一个 Chrome 插件（下图），后来陆续发布了桌面端和手机端。</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202310/bg2023101302.webp" /></p>
+<p>它会把你的录屏自动发到云端，生成一个链接，你把这个 URL 发给其他人，对方就能在 Loom 的网站看到这个视频（下图）。</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202310/bg2023101303.webp" /></p>
+<p>它对企业用户非常有用，有些事情说不清，录一段屏就能让别人明白。它现在有20万付费用户，每月生成500万段视频，就能价值10亿美元。</p>
+<p>这件事告诉我们，一个很普通的功能，如果做到极致，也会身价非凡。</p>
+<p>4、<a href="https://arstechnica.com/gadgets/2023/10/google-com-tests-a-news-filled-homepage-just-like-bing-and-yahoo/">谷歌的主页实验</a></p>
+<p>谷歌自从成立至今，主页始终只有一个搜索框。</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202310/bg2023101613.webp" /></p>
+<p>但是，这种日子可能要结束了。根据报道，谷歌正在印度测试新的主页，上面会显示新闻、天气和股票。</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202310/bg2023101614.webp" /></p>
+<p>虽然，谷歌强调这只是一个小范围的实验，未必会推广。但是，这让我们看到，随着时间的流逝，谷歌终究变得越来越像百度。</p>
+<h2 id="_5">文章</h2>
+<p>1、<a href="https://finance.sina.cn/blockchain/2023-10-17/detail-imzrkyrm8917643.d.html">Telegram 创始人及其加密野心</a>（中文）</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202310/bg2023101810.webp" /></p>
+<p>即时通讯软件 Telegram 创始人的传奇故事。</p>
+<p>2、<a href="https://mp.weixin.qq.com/s/w-pMU3_TD3dEPoW-XEde-A">Linux 中如何安全地抹去磁盘数据？</a>（中文）</p>
+<p>文件管理器或者 rm 命令，并不能安全地删除数据。本文介绍 Linux 中常见的三个命令，安全地抹去磁盘数据。（<a href="https://github.com/ruanyf/weekly/issues/3566">@xxxsalted</a> 投稿）</p>
+<p>3、<a href="https://webkit.org/blog/14571/css-nesting-and-the-cascade/">CSS 嵌套来了</a>（英文）</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202310/bg2023100513.webp" /></p>
+<p>以前的 CSS 不支持嵌套的写法。但是，现在 Firefox 和 Safari 的正式版本，都已经支持这种写法了（上图）。 </p>
+<p>4、<a href="https://chriscoyier.net/2023/10/03/being-picky-about-a-css-reset-for-fun-pleasure/">CSS 重置详解（2023版）</a>（英文）</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202310/bg2023101611.webp" /></p>
+<p>著名 CSS 作者 Chris Coyier 的最新文章，解释浏览器的 CSS 重置（CSS reset）每一行的意思。 </p>
+<p>5、<a href="https://www.thesoftwarephilosopher.com/articles/2023-08-07-modern-90s-web-dev.html">我用 Web Components 开发了自己的网站</a>（英文）</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202308/bg2023080806.webp" /></p>
+<p>作者记录怎么使用 Web Components 这种技术，开发自己的网站，他对结果非常满意。如果你想了解 Web Components，这是一篇不错的参考资料。</p>
+<p>6、<a href="https://getwaitlist.com/blog/solo-dev-startup-stack">我的创业技术栈</a>（英文）</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202308/bg2023080807.webp" /></p>
+<p>作者记录了自己创业所使用的各种 SaaS 服务，免费的优先。</p>
+<p>7、<a href="https://www.trickster.dev/post/back-to-the-terminal-the-new-era-of-cli-and-tui-software/">终端软件的新时代</a>（英文）</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202308/bg2023080909.webp" /></p>
+<p>GUI（图形界面）是目前的主流，但是这些年来 CLI（命令行）软件也一直在发展，变得越来越好用。本文介绍近年出现的一些新的 CLI 软件，可以替代传统软件。</p>
+<p>8、<a href="https://hturan.com/writing/exploring-exif">探索 EXIF</a>（英文）</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202309/bg2023090702.webp" /></p>
+<p>本文介绍如何从 iPhone 照片提取 EXIF，并将它们放入数据库，检索各种有趣的信息。</p>
+<h2 id="_6">工具</h2>
+<p>1、<a href="https://github.com/mycelial/mycelite">Mycelite</a></p>
+<p>一个 SQLite 扩展，用来从一个 SQLite 实例同步到另一个，适合从本地向服务端同步数据。</p>
+<p>2、<a href="https://github.com/JessYan0913/pictode">Pictode</a></p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202310/bg2023101901.webp" /></p>
+<p>一个开源的网页绘图编辑器。（<a href="https://github.com/ruanyf/weekly/issues/3567">@JessYan0913</a> 投稿）</p>
+<p>3、<a href="https://github.com/massivemadness/Squircle-CE">Squircle-CE</a></p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202306/bg2023062813.webp" /></p>
+<p>一个开源的安卓代码编辑器，在手机上开发代码。</p>
+<p>4、<a href="https://localsend.org/">LocalSend</a></p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202310/bg2023101903.webp" /></p>
+<p>一款开源的跨平台文件传送软件，不需要互联网连接，依靠共享 Wifi 分享文件。</p>
+<p>5、<a href="https://uninstalr.com/">Uninstallr</a></p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202308/bg2023081902.webp" /></p>
+<p>一个免费的 Windows 卸载程序，号称可以准确、完整地卸载各种 Windows 软件，残留最少，参见<a href="https://jv16powertools.com/blog/comparing-windows-uninstallers-and-making-uninstalr/">作者自述</a>。</p>
+<p>6、<a href="https://github.com/linyuxuanlin/Auto-i18n">Auto-i18n</a></p>
+<p>它使用 GitHub Actions 和 ChatGPT，将仓库里面的 Markdown 文件翻译成其他语言，适合制作网站的国际化版本。（<a href="https://github.com/ruanyf/weekly/issues/3564">@linyuxuanlin</a> 投稿）</p>
+<p>7、<a href="https://ffmpeg-online.vercel.app/">在线 ffmpeg</a></p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202310/bg2023101610.webp" /></p>
+<p>网页版的 ffmpeg，可以离线在网页上执行 ffmpeg 命令行，来编辑视频。</p>
+<p>8、<a href="https://github.com/dnakov/little-rat">little-rat</a></p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202308/bg2023082302.webp" /></p>
+<p>一个 Chrome 插件，用来统计并关闭其他插件发出的 HTTP 请求，可以了解插件是否在偷偷上传数据。</p>
+<p>9、<a href="https://github.com/lllyasviel/Fooocus">Fooocus</a></p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202308/bg2023081304.webp" /></p>
+<p>一个桌面应用，可以在离线条件下，通过文本生成图片。</p>
+<p>10、<a href="https://github.com/binpash/try">try</a></p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202306/bg2023062508.webp" /></p>
+<p>一个 Linux 沙盒程序，让你在更改系统（比如安装程序或运行脚本）之前，先在沙盒中运行命令并检查效果。</p>
+<h2 id="_7">资源</h2>
+<p>1、<a href="https://zibada.guru/gcj/">谷歌编程竞赛试题</a>（Google Coding Competitions）</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202306/bg2023060304.webp" /></p>
+<p>这个网站提供谷歌编程竞赛历年的真题。</p>
+<p>2、<a href="https://dbdb.io/">数据库的数据库</a></p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202308/bg2023083002.webp" /></p>
+<p>这个网站收集各种数据库的资料，目前一共有900多个数据库。</p>
+<p>3、<a href="https://github.com/tb0hdan/domains/blob/master/STATS.md">顶级域名统计</a></p>
+<p>这个仓库提供所有顶级域名的排名，按照各个域名的网站数量为序。</p>
+<p>4、<a href="https://gitlab.com/engmark/nix-start">Nix start</a></p>
+<p>软件包管理工具 Nix 的入门教程。</p>
+<p>5、<a href="https://flashmuseum.org/">Flash 博物馆</a></p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202307/bg2023072914.webp" /></p>
+<p>该网站收集各种以前的 Flash 作品，并自带播放器，可以在线播放。</p>
+<h2 id="_8">图片</h2>
+<p>1、<a href="https://www.npr.org/sections/pictureshow/2022/06/25/1103324203/octopus-seahorse-jellyfish-national-geographic-liittschwager">章鱼、海马、水母</a></p>
+<p>美国《国家地理》杂志的一位摄影师，专门拍摄章鱼、海马、水母，最近出版了一本摄影集。</p>
+<p>他拍摄的章鱼、海马、水母，都让人感到与众不同。下图是章鱼。</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202206/bg2022062706.webp" /></p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202206/bg2022062707.webp" /></p>
+<p>海马</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202206/bg2022062708.webp" /></p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202206/bg2022062709.webp" /></p>
+<p>水母</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202206/bg2022062710.webp" /></p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202206/bg2022062711.webp" /></p>
+<p>2、<a href="https://mossandfog.com/impressive-owl-camouflage-on-display-can-you-spot-them/">猫头鹰的伪装</a></p>
+<p>猫头鹰非常善于伪装，可以很好地融入周围环境，不被猎物发现。</p>
+<p>标题链接里面，有很多猫头鹰的伪装照片。下面就是其中的两张，你能看出里面有猫头鹰吗？</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202211/bg2022111004.webp" /></p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202211/bg2022111005.webp" /></p>
+<h2 id="_9">文摘</h2>
+<p>1、<a href="https://www.popularmechanics.com/space/rockets/a8965/why-dont-we-have-artificial-gravity-15425569/">人造重力</a></p>
+<p>几乎所有跟宇宙飞船有关的科幻电影，都有一个共同的 Bug，那就是它们里面的人造重力系统。</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202310/bg2023101804.webp" /></p>
+<p>我们知道，太空没有重力，宇航员在飞行过程中，应该处于失重状态。</p>
+<p>但是，在这些影视作品中，人们在船舱里面走来走去，就像在地球上一样。实际上，这是不可能的。它们这样拍摄，只是因为人造重力使得观众更容易产生共鸣，拍摄起来也更容易。</p>
+<p>为什么宇宙飞船无法安装人造重力呢？</p>
+<p>因为在飞船（或空间站）上产生人造重力，最现实的方法是让飞船围着一个点旋转，从而产生向心力。对着内部的人来说，会感到一种向着“地板”的拉力，以此模拟重力。</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202310/bg2023101805.webp" /></p>
+<p>在一艘这种方式产生人造重力的宇宙飞船中，你会垂直于飞船的“墙”行走，墙将成为地板，而原来的飞船地板将成为墙。</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202310/bg2023101806.webp" /></p>
+<p>那么，为什么我们还没有建造这种圆环式的飞船呢？</p>
+<p>问题在于尺寸。为了产生足够的向心力，旋转速度必须很快，飞船体积越小，旋转速度就越快。由于人体经受不住快速旋转，所以就不得不建造大型飞船，才能把旋转变得非常缓慢。</p>
+<p>地球的重力为 1g，假设旋转速度为每天（24小时）旋转一圈，请问产生 1g 向心力的圆环需要多大？</p>
+<p>计算结果是，这个圆环的直径约为371万公里，自转速度为486,000公里/小时。作为对比，地球直径是1.27万公里。</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202310/bg2023101807.webp" /></p>
+<p>所以，飞船想在飞行过程中，实现人造重力是不现实的。宇航员想获得重力，只能降落其他行星的表面。</p>
+<p>网上有<a href="https://erikwernquist.com/one-revolution-per-minute">一个视频</a>，名字叫做《每分钟一转》（one revolution per minute），模拟向心力产生人造重力的宇宙飞船内部的生活，拍得非常好，推荐观看。</p>
+<p><img alt="" src="https://cdn.beekka.com/blogimg/asset/202310/bg2023101808.webp" /></p>
+<h2 id="_10">言论</h2>
+<p>1、</p>
+<p>世界上有成千上万的聪明人，他们可以创办公司，也可以不创办。外界只要在适当的地方施加一些小小的推动，世界就会涌现一大批本来不存在的创业企业。</p>
+<p>-- <a href="https://www.tonykulesa.com/p/a-relatively-small-amount-of-force">保罗·格雷厄姆</a>，硅谷创业导师</p>
+<p>2、</p>
+<p>人们一直有一种误解，认为 Tailwind 与 Bootstrap 是竞争关系。但是，它们是两个不同层面的东西。Bootstrap 提供了 CSS 组件，而 Tailwind 只是一种更快的 CSS 书写方式。</p>
+<p>-- <a href="https://news.ycombinator.com/item?id=37144502">Hacker News 用户</a>  </p>
+<p>3、</p>
+<p>建立长期月球基地的价值并不大，至少不如火星基地大。在月球上，你要么被高温炙烤两周，然后被低温冷冻两周，要么在两极地区被永久冷冻。火星的大气层虽然很薄，但可以从中获取氮气、氧气、微量的氢气，以及源源不断的碳。月球没有大气层，接近真空，从那里很难大量提取有用的东西。</p>
+<p>-- <a href="https://news.ycombinator.com/item?id=37221847">Hacker News 读者</a></p>
+<p>4、</p>
+<p>产品是资产，代码是负债。</p>
+<p>你的产品解决了客户的问题，因此是你的资产。代码则是创造资产的成本。你拥有的代码越多，阅读、测试、更改和理解所付出的成本就越高。</p>
+<p>-- <a href="https://martinrue.com/my-engineering-axioms/">《我的工程公理》</a></p>
+<p>5、</p>
+<p>程序员的任务不仅仅是解决今天的问题，还要确保你的代码不会成为明天的问题。</p>
+<p>-- <a href="https://addyosmani.com/blog/good-code/">《好的代码就像写给接手者的一封情书》</a></p>
+<h2 id="_11">往年回顾</h2>
+<p><a href="http://www.ruanyifeng.com/blog/2022/10/weekly-issue-227.html">脸书的公司入职教育</a>（2022 #227）</p>
+<p><a href="http://www.ruanyifeng.com/blog/2021/09/weekly-issue-177.html">iPad 的真正用途</a>（2021 #177）</p>
+<p><a href="http://www.ruanyifeng.com/blog/2020/09/weekly-issue-127.html">未来人人开发软件，几乎没人编码</a>（2020 #127）</p>
+<p><a href="http://www.ruanyifeng.com/blog/2019/10/weekly-issue-77.html">韩剧《阿尔布拉罕宫的回忆》</a>（2019 #77）</p>
+<p>（完）</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.525ec568.min.js"></script>
+      
+    
+  </body>
+</html>
