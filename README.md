@@ -4,7 +4,7 @@
 
 欢迎投稿，推荐或自荐文章/软件/资源，请[提交 issue](https://github.com/ruanyf/weekly/issues) 。
 
-> P.S. 讨论区的[《谁在招人》](https://github.com/ruanyf/weekly/issues/6189)，是一个免费的程序员招聘帖，提供大量就业信息，欢迎访问或发布工作/实习岗位。
+> P.S. 讨论区的[《谁在招人》](https://github.com/ruanyf/weekly/issues/6965)，是一个免费的程序员招聘帖，提供大量就业信息，欢迎访问或发布工作/实习岗位。
 
 ## 如何搜索
 
@@ -28,8 +28,28 @@ $ grep -nri css docs | cat --number
 
 ## 2025
 
+**六月**
+
+- 第 351 期：[GitHub Issues（几乎）是最好的笔记应用](docs/issue-351.md)
+
+**五月**
+
+- 第 350 期：[Java 三十周年](docs/issue-350.md)
+- 第 349 期：[神经网络算法的发明者](docs/issue-349.md)
+- 第 348 期：[李飞飞，从移民到 AI 明星](docs/issue-348.md)
+- 第 347 期：[冷启动的破解之道](docs/issue-347.md)
+
+**四月**
+
+- 第 346 期：[未来就是永恒感的丧失](docs/issue-346.md)
+- 第 345 期：[HDMI 2.2 影音可能到头了](docs/issue-345.md)
+- 第 344 期：[制造业正在“零工化”](docs/issue-344.md)
+
 **三月**
 
+- 第 343 期：[如何阻止 AI 爬虫](docs/issue-343.md)
+- 第 342 期：[面试的 AI 作弊——用数字人去面试](docs/issue-342.md)
+- 第 341 期：[低代码编程，恐怕不会成功](docs/issue-341.md)
 - 第 340 期：[技术炒作三十年](docs/issue-340.md)
 
 **二月**
