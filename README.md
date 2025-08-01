@@ -4,7 +4,7 @@
 
 欢迎投稿，推荐或自荐文章/软件/资源，请[提交 issue](https://github.com/ruanyf/weekly/issues) 。
 
-> P.S. 讨论区的[《谁在招人》](https://github.com/ruanyf/weekly/issues/7169)，是一个免费的程序员招聘帖，提供大量就业信息，欢迎访问或发布工作/实习岗位。
+> P.S. 讨论区的[《谁在招人》](https://github.com/ruanyf/weekly/issues/7408)，是一个免费的程序员招聘帖，提供大量就业信息，欢迎访问或发布工作/实习岗位。
 
 ## 如何搜索
 
@@ -28,8 +28,14 @@ $ grep -nri css docs | cat --number
 
 ## 2025
 
+**八月**
+
+- 第 359 期：[Palantir 值得关注](docs/issue-359.md)
+
 **七月**
 
+- 第 358 期：[如何拯救一家濒临倒闭的创业公司](docs/issue-358.md)
+- 第 357 期：[稳定币的博弈](docs/issue-357.md)
 - 第 356 期：[公司强推 AI 编程，我该怎么办](docs/issue-356.md)
 - 第 355 期：[两本《芯片战争》](docs/issue-355.md)
 
