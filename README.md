@@ -4,7 +4,7 @@
 
 欢迎投稿文章/软件/资源，请[提交 issue](https://github.com/ruanyf/weekly/issues) 。
 
-> P.S. 讨论区的[《谁在招人》](https://github.com/ruanyf/weekly/issues/7674)，是一个免费的程序员招聘帖，提供大量就业信息，欢迎发布工作/实习岗位。
+> P.S. 讨论区的[《谁在招人》](https://github.com/ruanyf/weekly/issues/8003)，是一个免费的程序员招聘帖，提供大量就业信息，欢迎发布工作/实习岗位。
 
 ## 赞助商
 
@@ -19,6 +19,19 @@
 </div>
 
 ## 2025
+
+**十一月**
+
+- 第 374 期：[6GHz 的问题](docs/issue-374.md)
+- 第 373 期：[数据模型是新产品的核心](docs/issue-373.md)
+- 第 372 期：[软件界面如何设计](docs/issue-372.md)
+
+**十月**
+
+- 第 371 期：[一个乐观主义者的专访](docs/issue-371.md)
+- 第 370 期：[正确的代码高亮](docs/issue-370.md)
+- 第 369 期：[Tim 与罗永浩的对谈](docs/issue-369.md)
+- 第 368 期：[不要这样管理软件团队](docs/issue-368.md)
 
 **九月**
 
