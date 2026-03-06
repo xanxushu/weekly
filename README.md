@@ -4,12 +4,17 @@
 
 欢迎投稿文章/软件/资源，请[提交 issue](https://github.com/ruanyf/weekly/issues) 。
 
-> P.S. 讨论区的[《谁在招人》](https://github.com/ruanyf/weekly/issues/8882)，是一个免费的程序员招聘帖，提供大量就业信息，欢迎发布工作/实习岗位。
+> P.S. 讨论区的[《谁在招人》](https://github.com/ruanyf/weekly/issues/9088)，是一个免费的程序员招聘帖，提供大量就业信息，欢迎发布工作/实习岗位。
 
 ## 2026
 
+**三月**
+
+- 第 387 期：[你是领先的](docs/issue-387.md)
+
 **二月**
 
+- 第 386 期：[当外卖员接入 AI](docs/issue-386.md)
 - 第 385 期：[马斯克害怕中国车企吗？](docs/issue-385.md)
 - 第 384 期：[为什么软件股下跌](docs/issue-384.md)
 
