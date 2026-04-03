@@ -4,12 +4,19 @@
 
 欢迎投稿文章/软件/资源，请[提交 issue](https://github.com/ruanyf/weekly/issues) 。
 
-> P.S. 讨论区的[《谁在招人》](https://github.com/ruanyf/weekly/issues/9088)，是一个免费的程序员招聘帖，提供大量就业信息，欢迎发布工作/实习岗位。
+> P.S. 讨论区的[《谁在招人》](https://github.com/ruanyf/weekly/issues/9454)，是一个免费的程序员招聘帖，提供大量就业信息，欢迎发布工作/实习岗位。
 
 ## 2026
 
+**四月**
+
+- 第 391 期：[AI 的贫富分化](docs/issue-391.md)
+
 **三月**
 
+- 第 390 期：[没有语料，大模型就是智障](docs/issue-390.md)
+- 第 389 期：[未来如何招聘程序员](docs/issue-389.md)
+- 第 388 期：[测试是新的护城河](docs/issue-388.md)
 - 第 387 期：[你是领先的](docs/issue-387.md)
 
 **二月**
