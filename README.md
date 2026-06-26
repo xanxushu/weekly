@@ -4,12 +4,27 @@
 
 欢迎投稿文章/软件/资源，请[提交 issue](https://github.com/ruanyf/weekly/issues) 。
 
-> P.S. 讨论区的[《谁在招人》](https://github.com/ruanyf/weekly/issues/9454)，是一个免费的程序员招聘帖，提供大量就业信息，欢迎发布工作/实习岗位。
+> P.S. 讨论区的[《谁在招人》](https://github.com/ruanyf/weekly/issues/10147)，是一个免费的程序员招聘帖，提供大量就业信息，欢迎发布工作/实习岗位。
 
 ## 2026
 
+**六月**
+
+- 第 401 期：[如何赚到10亿美元](docs/issue-401.md)
+- 第 400 期：[rsync 的争论](docs/issue-400.md)
+- 第 399 期：[中国 AI 大厂访问记](docs/issue-399.md)
+
+**五月**
+
+- 第 398 期：[Token 费用难以负担](docs/issue-398.md)
+- 第 397 期：[财富正在向 AI 集中](docs/issue-397.md)
+- 第 396 期：[互联网通信的替代方案](docs/issue-396.md)
+- 第 395 期：[软件开发的第三种方式](docs/issue-395.md)
+
 **四月**
 
+- 第 394 期：[第二次 API 开放浪潮](docs/issue-394.md)
+- 第 393 期：[脑腐状态](docs/issue-393.md)
 - 第 392 期：[axios 投毒与好莱坞式骗术](docs/issue-392.md)
 - 第 391 期：[AI 的贫富分化](docs/issue-391.md)
 
